@@ -1,9 +1,33 @@
+:root {
+    --natural: #232946;
+    --base-100: #fffffe;
+    --netural-focus: #121629
+}
+
+*{
+ margin: 0;
+}
+
 #nav-bar{
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--natural);
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid var(--netural-focus)
 }
+
 .nav-links{
     display: flex;
     list-style: none;
     font-family: serif;
+}
+
+.nav-links a{
+    text-decoration: none;
+    padding: 0 10px;
+    color: var()
 }
