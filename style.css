@@ -3,7 +3,6 @@
     --base-100: #fffffe;
     --netural-focus: #121629;
 }
-
 *{
  margin: 0;
 }
@@ -26,8 +25,22 @@
     font-family: serif;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     padding: 0 10px;
     color: var()
+
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+section{
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+#welcome-section {
+    background-color: var(--netural);
 }
