@@ -3,6 +3,7 @@
     --base-100: #fffffe;
     --netural-focus: #121629;
     --accent: #eebbc3;
+    --secondary: #b8c1ec;
 }
 *{
  margin: 0;
@@ -76,4 +77,28 @@ section{
     font-size: 25px;
     margin: 25px 0;
     font-style: italic;
+}
+#projects{
+    background-color: var(--secondary);
+    color: var(--netural);
+}
+#projects h1{
+    border-bottom: 5px solid var(--netural);
+}
+#projects .projects{
+    display: grid;
+}
+
+
+#projects .project-title{
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects .project-title img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
