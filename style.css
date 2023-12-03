@@ -2,6 +2,7 @@
     --netural: #232946;
     --base-100: #fffffe;
     --netural-focus: #121629;
+    --accent: #eebbc3;
 }
 *{
  margin: 0;
@@ -66,4 +67,13 @@ section{
     color: var(--base-100);
     display: flex;
     flex-direction: column;
+}
+#welcome-section h1{
+    margin-top: 30vh;
+}
+#welcome-section p{
+    color: var(--accent);
+    font-size: 25px;
+    margin: 25px 0;
+    font-style: italic;
 }
