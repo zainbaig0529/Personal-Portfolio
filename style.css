@@ -1,7 +1,7 @@
 :root {
-    --natural: #232946;
+    --netural: #232946;
     --base-100: #fffffe;
-    --netural-focus: #121629
+    --netural-focus: #121629;
 }
 
 *{
@@ -14,7 +14,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--natural);
+    background-color: var(--netural);
     padding: 20px 0;
     font-size: 20px;
     border-bottom: 1px solid var(--netural-focus)
