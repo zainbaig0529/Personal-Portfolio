@@ -107,6 +107,7 @@ section{
     align-items: center;
     justify-content: center;
     background-color: var(--netural);
+    text-decoration: none;
     color: var(--accent);
     border-radius: 8px 8px 10px 5px rgba(100,100,100,0.3);
 }
@@ -116,3 +117,20 @@ section{
     width: 100%;
     object-fit: cover;
 }
+
+#projects .project-tile p {
+    font-size: 25px;
+    padding: 10px;
+}
+
+#projects .project-tile span {
+    opacity: 0%;
+    padding: 0 5px;
+}
+
+#projects .project-tile:hover span {
+    opacity: 100%;
+    color: var(--primary);
+    transition: opacity 0.25s ease-in;
+}
+
