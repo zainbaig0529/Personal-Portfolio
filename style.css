@@ -112,7 +112,8 @@ section {
     background-color: var(--neutral);
     text-decoration: none;
     color: var(--accent);
-    border-radius: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
 }
 
 #projects .project-tile img {
@@ -137,4 +138,22 @@ section {
     transition: opacity 0.25s ease-in;
 }
 
+.show-all {
+    text-decoration: none;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0px 15px;
+    background-color: var(--neutral);
+    color: var(--accent);
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2 ease-in;;
+}
 
+.show-all :hover {
+    background-color: var(--neutral-focus);
+    color: var(--base-100);
+}
