@@ -31,7 +31,7 @@ h1 {
     font-size: 60px;
 }
 
-#nav-bar {
+#navbar {
     display: flex;
     justify-content: center;
     position: fixed;
