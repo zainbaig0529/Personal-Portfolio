@@ -182,15 +182,17 @@ section {
 
 }
 
-#contact .social-media{
+#contact .social-media {
     text-decoration: none;
     color: var(--base-100);
     transition: transform 0.2s ease-in;
     display: flex;
     align-items: center;
+    justify-content: center; /* Added to center the content horizontally */
     margin: 20px;
-    font-size: 22px;
+    font-size: 28px; /* Adjusted the font size for larger icons */
 }
+
 
 #contact .social-media:hover {
     transform: translateY(10px);
