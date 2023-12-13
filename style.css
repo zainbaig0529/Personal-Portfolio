@@ -172,24 +172,18 @@ section {
     margin-top: 100px;
 }
 
-#contact .social-medias{
+.social-media {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    justify-content: space-around;
-    margin: auto;
-    margin-top: 30px;
-
+    gap: 20px; /* Adjust the spacing between icons */
 }
 
-#contact .social-media{
-    text-decoration: none;
-    color: var(--base-100);
-    transition: transform 0.2s ease-in;
+.social-media a {
     display: flex;
     align-items: center;
-    margin: 20px;
-    font-size: 22px;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
 }
 
 #contact .social-media:hover {
