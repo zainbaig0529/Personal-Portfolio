@@ -1,10 +1,10 @@
 :root {
-    --neutral: #2c3e50; /* Updated neutral color */
-    --base-100: #ecf0f1; /* Updated base color */
-    --neutral-focus: #34495e; /* Updated neutral focus color */
-    --primary: #3498db; /* Updated primary color to a more "boyish" blue */
-    --accent: #2ecc71; /* Updated accent color to a greenish shade */
-    --secondary: #95a5a6; /* Updated secondary color */
+    --neutral: #1a1a1a; /* Dark background color */
+    --base-100: #ffffff; /* White text color */
+    --neutral-focus: #333333; /* Darker focus color */
+    --primary: #3498db; /* Blue accent color */
+    --accent: #e74c3c; /* Red accent color */
+    --secondary: #2ecc71; /* Green accent color */
 }
 
 * {
