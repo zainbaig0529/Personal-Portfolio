@@ -185,7 +185,7 @@ section {
     align-items: center;
     justify-content: center; /* Added to center the content horizontally */
     margin: 20px;
-    font-size: 36px; /* Adjusted the font size for larger icons */
+    font-size: 60px; /* Adjusted the font size for larger icons */
 }
 
 #contact .social-media:hover {
