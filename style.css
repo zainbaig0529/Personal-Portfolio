@@ -159,27 +159,22 @@ section {
     color: var(--base-100);
 }
 
-#contact{
+#contact {
     background-color: var(--neutral);
     color: var(--base-100);
 }
 
-#contact h1{
+#contact h1 {
     margin-top: 100px;
 }
 
-#contact h1{
-    margin-top: 100px;
-}
-
-#contact .social-medias{
+#contact .social-medias {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
     justify-content: space-around;
     margin: auto;
     margin-top: 30px;
-
 }
 
 #contact .social-media {
@@ -190,13 +185,13 @@ section {
     align-items: center;
     justify-content: center; /* Added to center the content horizontally */
     margin: 20px;
-    font-size: 28px; /* Adjusted the font size for larger icons */
+    font-size: 36px; /* Adjusted the font size for larger icons */
 }
-
 
 #contact .social-media:hover {
     transform: translateY(10px);
 }
+
 
 footer {
     border-top: 3px solid var(--primary);
