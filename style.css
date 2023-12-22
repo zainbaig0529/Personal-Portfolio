@@ -150,7 +150,9 @@ section {
 .project-tile img {
     width: 100%;
     max-width: 300px;
+    min-height: 200px; /* Set a minimum height or adjust as needed */
     height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
     border-radius: 10px 10px 0 0;
 }
 
@@ -215,31 +217,4 @@ section {
 #contact .social-media {
     text-decoration: none;
     color: var(--base-100);
-    transition: transform 0.2s ease-in;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    font-size: 32px;
-}
-
-#contact .social-media:hover {
-    transform: translateY(10px);
-}
-
-footer {
-    border-top: 3px solid var(--primary);
-    color: var(--base-100);
-    font-size: 25px;
-    padding: 30px;
-}
-
-@media only screen and (max-width: 700px) {
-    h1 {
-        font-size: 50px;
-    }
-    #projects .project-tile {
-        height: 600px;
-        width: 100px;
-    }
-}
+    transition: transform 0.2s
