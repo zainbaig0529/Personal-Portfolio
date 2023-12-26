@@ -217,4 +217,5 @@ section {
 #contact .social-media {
     text-decoration: none;
     color: var(--base-100);
-    transition: transform 0.2s
+    transition: transform 0.2s;
+}
