@@ -217,5 +217,12 @@ section {
 #contact .social-media {
     text-decoration: none;
     color: var(--base-100);
-    transition: transform 0.2s;
+    transition: transform 0.2s, color 0.2s; /* Added color transition */
+    font-size: 104px; /* Adjust the font size as needed */
 }
+
+#contact .social-media:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+    color: var(--accent); /* Change color on hover */
+}
+
