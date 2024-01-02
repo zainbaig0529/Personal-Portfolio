@@ -104,7 +104,7 @@ section {
 }
 
 .project-tile {
-    height: 450px; /* Decreased height */
+    height: 450px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -150,8 +150,9 @@ section {
 
 .buttons {
     display: flex;
+    flex-direction: column; /* Changed direction to column */
     gap: 10px;
-    margin-top: 10px; /* Added margin between text and buttons */
+    margin-top: auto; /* Adjusted margin-top to move to the bottom */
 }
 
 .github-button,
@@ -222,4 +223,3 @@ section {
     transform: scale(1.2);
     color: var(--accent);
 }
-
