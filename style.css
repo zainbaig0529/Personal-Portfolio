@@ -81,7 +81,6 @@ section {
     margin: 25px 0;
     font-style: italic;
 }
-
 #projects {
     background-color: var(--secondary);
     color: var(--neutral);
@@ -139,7 +138,7 @@ section {
 #projects .project-tile span {
     opacity: 0%;
     padding: 0 5px;
-    margin-bottom: 10px; /* Added margin for space between title and buttons */
+    margin-bottom: 10px;
 }
 
 #projects .project-tile:hover span {
@@ -150,9 +149,9 @@ section {
 
 .buttons {
     display: flex;
-    flex-direction: column; /* Changed direction to column */
+    flex-direction: column-reverse; /* Changed direction to column-reverse */
     gap: 10px;
-    margin-top: auto; /* Adjusted margin-top to move to the bottom */
+    margin-top: auto;
 }
 
 .github-button,
@@ -173,6 +172,7 @@ section {
 .live-demo-button:hover {
     background-color: var(--neutral-focus);
 }
+
 
 .show-all {
     text-decoration: none;
