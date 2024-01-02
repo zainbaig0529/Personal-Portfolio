@@ -109,7 +109,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Adjusted alignment */
     background-color: var(--neutral);
     text-decoration: none;
     color: var(--accent);
@@ -117,15 +116,6 @@ section {
     box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
     position: relative;
     overflow: hidden;
-}
-
-.buttons {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    flex-direction: column; /* Changed direction to column */
-    z-index: 1;
 }
 
 .project-tile img {
@@ -158,6 +148,12 @@ section {
     transition: opacity 0.25s ease-in;
 }
 
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Added margin between text and buttons */
+}
+
 .github-button,
 .live-demo-button {
     background-color: var(--primary);
@@ -166,7 +162,6 @@ section {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
-    margin-bottom: 0.5rem; /* Added margin between buttons */
 }
 
 .live-demo-button {
@@ -227,3 +222,4 @@ section {
     transform: scale(1.2);
     color: var(--accent);
 }
+
