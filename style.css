@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Preferred Font', sans-serif; /* Adjusted font family */
     text-align: center;
     background-color: var(--neutral);
 }
@@ -104,12 +104,12 @@ section {
 }
 
 .project-tile {
-    height: 525px;
+    height: 450px; /* Decreased height */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Adjusted alignment */
     background-color: var(--neutral);
     text-decoration: none;
     color: var(--accent);
@@ -125,34 +125,16 @@ section {
     right: 10px;
     display: flex;
     gap: 10px;
+    flex-direction: column; /* Changed direction to column */
     z-index: 1;
-}
-
-.github-button,
-.live-demo-button {
-    background-color: var(--primary);
-    color: var(--base-100);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.live-demo-button {
-    background-color: var(--accent);
-}
-
-.github-button:hover,
-.live-demo-button:hover {
-    background-color: var(--neutral-focus);
 }
 
 .project-tile img {
     width: 100%;
     max-width: 300px;
-    min-height: 200px; /* Set a minimum height or adjust as needed */
+    min-height: 200px;
     height: auto;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
 
@@ -168,12 +150,33 @@ section {
 #projects .project-tile span {
     opacity: 0%;
     padding: 0 5px;
+    margin-bottom: 10px; /* Added margin for space between title and buttons */
 }
 
 #projects .project-tile:hover span {
     opacity: 100%;
     color: var(--primary);
     transition: opacity 0.25s ease-in;
+}
+
+.github-button,
+.live-demo-button {
+    background-color: var(--primary);
+    color: var(--base-100);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 0.5rem; /* Added margin between buttons */
+}
+
+.live-demo-button {
+    background-color: var(--accent);
+}
+
+.github-button:hover,
+.live-demo-button:hover {
+    background-color: var(--neutral-focus);
 }
 
 .show-all {
@@ -217,12 +220,12 @@ section {
 #contact .social-media {
     text-decoration: none;
     color: var(--base-100);
-    transition: transform 0.2s, color 0.2s; /* Added color transition */
-    font-size: 104px; /* Adjust the font size as needed */
+    transition: transform 0.2s, color 0.2s;
+    font-size: 104px;
 }
 
 #contact .social-media:hover {
-    transform: scale(1.2); /* Increase the size on hover */
-    color: var(--accent); /* Change color on hover */
+    transform: scale(1.2);
+    color: var(--accent);
 }
 
