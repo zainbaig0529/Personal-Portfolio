@@ -1,10 +1,10 @@
 :root {
-    --neutral: #f4f4f4; /* Light background color */
-    --base-100: #333333; /* Dark text color */
-    --neutral-focus: #e0e0e0; /* Light focus color */
-    --primary: #3498db; /* Blue accent color */
-    --accent: #e74c3c; /* Red accent color */
-    --secondary: #27ae60; /* Green accent color */
+    --neutral: #f4f4f4;
+    --base-100: #333333;
+    --neutral-focus: #e0e0e0;
+    --primary: #3498db;
+    --accent: #e74c3c;
+    --secondary: #27ae60;
 }
 
 * {
@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Preferred Font', sans-serif; /* Adjusted font family */
+    font-family: 'Preferred Font', sans-serif;
     text-align: center;
     background-color: var(--neutral);
 }
@@ -78,9 +78,10 @@ section {
 #welcome-section p {
     color: var(--accent);
     font-size: 25px;
-    margin: 25px 0;
+    margin: 20px 0; /* Adjusted margin for spacing */
     font-style: italic;
 }
+
 #projects {
     background-color: var(--secondary);
     color: var(--neutral);
@@ -94,7 +95,7 @@ section {
 
 #projects .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Shrunk the project tiles */
     gap: 30px;
     padding: 20px;
     place-items: center;
@@ -103,7 +104,7 @@ section {
 }
 
 .project-tile {
-    height: 450px;
+    height: 400px; /* Reduced the height */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -149,9 +150,9 @@ section {
 
 .buttons {
     display: flex;
-    flex-direction: column; /* Changed direction to column */
-    gap: 10px;
-    margin-top: 10px; /* Adjusted margin-top for spacing */
+    flex-direction: column;
+    gap: 0.5rem; /* Added space between buttons */
+    margin-top: 10px;
 }
 
 .github-button,
@@ -162,6 +163,7 @@ section {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
+    margin: 0.25rem; /* Added margin */
 }
 
 .live-demo-button {
@@ -172,8 +174,6 @@ section {
 .live-demo-button:hover {
     background-color: var(--neutral-focus);
 }
-
-
 
 .show-all {
     text-decoration: none;
