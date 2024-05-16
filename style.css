@@ -85,41 +85,37 @@ section {
 #projects {
     background-color: var(--secondary);
     color: var(--neutral);
-    position: relative; /* Added position relative */
-    overflow: hidden; /* Added overflow hidden */
 }
 
 #projects h1 {
     border-bottom: 5px solid var(--neutral);
     width: fit-content;
     margin: auto;
-    position: absolute; /* Added position absolute */
-    top: 0; /* Added top 0 */
-    left: 50%; /* Added left 50% */
-    transform: translateX(-50%); /* Added translateX -50% to center horizontally */
-    z-index: 1; /* Added z-index to ensure it's above the projects */
-    background-color: var(--secondary); /* Added background-color */
-    padding: 0 20px; /* Added padding */
 }
 
-.projects-container {
-    display: flex;
-    overflow-x: auto; /* Changed overflow to overflow-x and set to auto */
-    scroll-snap-type: x mandatory; /* Added scroll snap */
-}
-
-.projects {
-    display: flex; /* Changed display to flex */
-    gap: 30px; /* Changed gap */
-    padding: 20px; /* Added padding */
-    scroll-snap-align: start; /* Added scroll snap align */
+#projects .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Shrunk the project tiles */
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .project-tile {
-    height: 400px;
-    width: calc(100% / 3); /* Changed width */
-    flex-shrink: 0;
-    scroll-snap-stop: always; /* Added scroll snap stop */
+    height: 400px; /* Reduced the height */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--neutral);
+    text-decoration: none;
+    color: var(--accent);
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
+    position: relative;
+    overflow: hidden;
 }
 
 .project-tile img {
