@@ -156,7 +156,9 @@ section {
 }
 
 .github-button,
-.live-demo-button {
+.live-demo-button,
+.code-button,
+.report-button {
     background-color: var(--primary);
     color: var(--base-100);
     padding: 10px 20px;
@@ -171,7 +173,9 @@ section {
 }
 
 .github-button:hover,
-.live-demo-button:hover {
+.live-demo-button:hover,
+.code-button,
+.report-button {
     background-color: var(--neutral-focus);
 }
 
