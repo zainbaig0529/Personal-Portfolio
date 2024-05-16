@@ -25,29 +25,35 @@
 
     <section id="projects">
         <h1>These are some of my projects</h1>
-        <div class="projects">
-            <div class="project-tile">
-                <p><span>&lt;</span>CoogRMart Page<span>/&gt;</span></p>
-                <img src="cougar.gif" alt="Cougar Animation">
-                <a href="https://github.com/joshbatac/t13-proj" target="_blank" class="github-button">View on GitHub</a>
-                <a href="https://t13fall2024.netlify.app/" target="_blank" class="live-demo-button">Website</a>
+        <div class="projects-container">
+            <div class="projects">
+                <div class="project-tile">
+                    <p><span>&lt;</span>CoogRMart Page<span>/&gt;</span></p>
+                    <img src="cougar.gif" alt="Cougar Animation">
+                    <a href="https://github.com/joshbatac/t13-proj" target="_blank" class="github-button">View on GitHub</a>
+                    <a href="https://t13fall2024.netlify.app/" target="_blank" class="live-demo-button">Website</a>
+                </div>
+                <div class="project-tile">
+                    <p><span>&lt;</span>Personal Portfolio Page<span>/&gt;</span></p>
+                    <img src="resume.gif" alt="Resume Animation">
+                    <a href="https://github.com/zainbaig0529/Personal-Portfolio" target="_blank" class="github-button">View on GitHub</a>
+                    <a href="https://zainbaig.netlify.app/" target="_blank" class="live-demo-button">Website</a>
+                </div>
+                <div class="project-tile">
+                    <p><span>&lt;</span>Image Restoration and Color Processing Page<span>/&gt;</span></p>
+                    <img src="image.gif" alt="Image Animation">
+                    <a href="https://github.com/zainbaig0529/Image-Processing-and-Color-Restoration-Processing" target="_blank" class="github-button">View on GitHub</a>
+                </div>
+                <div class="project-tile">
+                    <p><span>&lt;</span>Cougarville Gas Page<span>/&gt;</span></p>
+                    <img src="fuel1.gif" alt="Gas Animation">
+                    <a href="https://github.com/zainbaig0529/Image-Processing-and-Color-Restoration-Processing" target="_blank" class="github-button">View on GitHub</a>
+                </div>
+                <!-- Add more project tiles here -->
             </div>
-            <div class="project-tile">
-                <p><span>&lt;</span>Personal Portfolio Page<span>/&gt;</span></p>
-                <img src="resume.gif" alt="Resume Animation">
-                <a href="https://github.com/zainbaig0529/Personal-Portfolio" target="_blank" class="github-button">View on GitHub</a>
-                <a href="https://zainbaig.netlify.app/" target="_blank" class="live-demo-button">Website</a>
-            </div>
-            <div class="project-tile">
-                <p><span>&lt;</span>Image Restoration and Color Processing Page<span>/&gt;</span></p>
-                <img src="image.gif" alt="Image Animation">
-                <a href="https://github.com/zainbaig0529/Image-Processing-and-Color-Restoration-Processing" target="_blank" class="github-button">View on GitHub</a>
-            </div>
-            <div class="project-tile">
-                <p><span>&lt;</span>Cougarville Gas Page<span>/&gt;</span></p>
-                <img src="fuel1.gif" alt="Gas Animation">
-                <a href="https://github.com/zainbaig0529/Image-Processing-and-Color-Restoration-Processing" target="_blank" class="github-button">View on GitHub</a>
-            </div>
+        </div>
+        <button class="arrow-button" id="prev-button">&#10094;</button>
+        <button class="arrow-button" id="next-button">&#10095;</button>
     </section>
 
     <section id="contact">
@@ -67,6 +73,17 @@
     
 
     <footer>Created by Zain Baig December 2023</footer>
+
+    <script>
+        document.getElementById('next-button').addEventListener('click', function() {
+            const container = document.querySelector('.projects-container');
+            container.scrollLeft += container.offsetWidth;
+        });
+
+        document.getElementById('prev-button').addEventListener('click', function() {
+            const container = document.querySelector('.projects-container');
+            container.scrollLeft -= container.offsetWidth;
+        });
+    </script>
 </body>
 </html>
-
