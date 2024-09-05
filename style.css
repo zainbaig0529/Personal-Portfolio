@@ -1,12 +1,12 @@
 :root {
-    --neutral: #1a1a1a;
-    --base-100: #ffffff;
-    --neutral-focus: rgba(255, 255, 255, 0.1);
-    --primary: #3498db;
-    --accent: #e74c3c;
-    --secondary: #27ae60;
-    --gradient-bg: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
-    --glass-bg: rgba(255, 255, 255, 0.1);
+    --background: #0d0d0d; /* Black background */
+    --base-100: #ffffff; /* White for text */
+    --neutral-focus: rgba(255, 255, 255, 0.1); /* Subtle glass effect */
+    --primary: #3c91e6; /* Electric Blue for primary elements */
+    --accent: #ff414d; /* Neon Red for accents and call-to-action buttons */
+    --secondary: #333333; /* Darker background for sections */
+    --gradient-bg: linear-gradient(135deg, #0d0d0d 0%, #333333 100%); /* Gradient from black to dark gray */
+    --glass-bg: rgba(255, 255, 255, 0.1); /* Glass effect with a slight tint */
 }
 
 * {
@@ -103,12 +103,12 @@ section {
 
 #projects {
     background-color: var(--secondary);
-    color: var(--neutral);
+    color: var(--base-100);
     padding: 50px 0;
 }
 
 #projects h1 {
-    border-bottom: 5px solid var(--neutral);
+    border-bottom: 5px solid var(--primary);
     width: fit-content;
     margin: auto;
 }
@@ -208,7 +208,7 @@ section {
     align-items: center;
     margin: auto;
     padding: 0px 15px;
-    background-color: var(--neutral);
+    background-color: var(--background);
     color: var(--accent);
     font-size: 25px;
     border-radius: 5px;
