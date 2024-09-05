@@ -111,6 +111,7 @@ section {
     border-bottom: 5px solid var(--primary);
     width: fit-content;
     margin: auto;
+    font-size: 2.5rem;
 }
 
 #projects .projects {
