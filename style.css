@@ -1,34 +1,49 @@
 :root {
-    --neutral: #f4f4f4;
-    --base-100: #333333;
-    --neutral-focus: #e0e0e0;
+    --neutral: #1a1a1a;
+    --base-100: #ffffff;
+    --neutral-focus: rgba(255, 255, 255, 0.1);
     --primary: #3498db;
     --accent: #e74c3c;
     --secondary: #27ae60;
+    --gradient-bg: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+    --glass-bg: rgba(255, 255, 255, 0.1);
 }
 
 * {
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Preferred Font', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-color: var(--neutral);
+    background: var(--gradient-bg);
+    color: var(--base-100);
+    overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
     font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #navbar {
@@ -37,26 +52,28 @@ h1 {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--neutral);
+    backdrop-filter: blur(10px);
+    background-color: var(--glass-bg);
     padding: 20px 0;
     font-size: 20px;
     border-bottom: 1px solid var(--neutral-focus);
+    z-index: 1000;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    font-family: serif;
 }
 
 .nav-links a {
     text-decoration: none;
-    padding: 0 10px;
+    padding: 0 15px;
     color: var(--base-100);
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: var(--accent);
 }
 
 section {
@@ -65,26 +82,29 @@ section {
 }
 
 #welcome-section {
-    background-color: var(--neutral);
-    color: var(--base-100);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--base-100);
 }
 
 #welcome-section h1 {
     margin-top: 30vh;
+    font-size: 5rem;
 }
 
 #welcome-section p {
     color: var(--accent);
     font-size: 25px;
-    margin: 20px 0; /* Adjusted margin for spacing */
+    margin: 20px 0;
     font-style: italic;
 }
 
 #projects {
     background-color: var(--secondary);
     color: var(--neutral);
+    padding: 50px 0;
 }
 
 #projects h1 {
@@ -95,7 +115,7 @@ section {
 
 #projects .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Shrunk the project tiles */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     padding: 20px;
     place-items: center;
@@ -104,24 +124,28 @@ section {
 }
 
 .project-tile {
-    height: 400px; /* Reduced the height */
+    height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--neutral);
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
     text-decoration: none;
     color: var(--accent);
-    border-radius: 5px;
-    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
-    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 
 .project-tile img {
     width: 100%;
-    max-width: 300px;
-    min-height: 200px;
     height: auto;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
@@ -129,7 +153,6 @@ section {
 
 .project-tile p {
     text-align: center;
-    margin: 0;
     padding: 10px;
     background-color: var(--neutral-focus);
     color: var(--base-100);
@@ -137,13 +160,13 @@ section {
 }
 
 #projects .project-tile span {
-    opacity: 0%;
+    opacity: 0;
     padding: 0 5px;
     margin-bottom: 10px;
 }
 
 #projects .project-tile:hover span {
-    opacity: 100%;
+    opacity: 1;
     color: var(--primary);
     transition: opacity 0.25s ease-in;
 }
@@ -151,7 +174,7 @@ section {
 .buttons {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Added space between buttons */
+    gap: 0.5rem;
     margin-top: 10px;
 }
 
@@ -165,7 +188,7 @@ section {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
-    margin: 0.25rem; /* Added margin */
+    margin: 0.25rem;
 }
 
 .live-demo-button {
@@ -174,14 +197,13 @@ section {
 
 .github-button:hover,
 .live-demo-button:hover,
-.code-button,
-.report-button {
+.code-button:hover,
+.report-button:hover {
     background-color: var(--neutral-focus);
 }
 
 .show-all {
     text-decoration: none;
-    width: max-content;
     display: flex;
     align-items: center;
     margin: auto;
@@ -191,7 +213,7 @@ section {
     font-size: 25px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2 ease-in;
+    transition: background-color 0.2s ease-in;
 }
 
 .show-all:hover {
@@ -200,12 +222,15 @@ section {
 }
 
 #contact {
-    background-color: var(--neutral);
+    background: var(--gradient-bg);
     color: var(--base-100);
+    padding: 50px 0;
 }
 
 #contact h1 {
     margin-top: 100px;
+    color: var(--primary);
+    animation: fadeInDown 1s ease-in-out;
 }
 
 #contact .social-medias {
