@@ -1,12 +1,10 @@
 :root {
-    --neutral: #1f1f1f; /* Dark charcoal background */
-    --base-100: #eaeaea; /* Soft off-white for text */
+    --neutral: #0d0d0d; /* Pure black background */
+    --base-100: #e0e0e0; /* Light gray for text */
     --neutral-focus: rgba(255, 255, 255, 0.1); /* Subtle glass effect */
-    --primary: #007acc; /* Sophisticated blue for primary elements */
-    --accent: #a855f7; /* Modern purple for accents */
-    --secondary: #4ade80; /* Soft green for backgrounds or highlights */
-    --gradient-bg: linear-gradient(135deg, #2b2b2b, #1f1f1f); /* Dark gradient */
-    --glass-bg: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+    --primary: #e50914; /* Bold red for primary elements */
+    --accent: #900C3F; /* Dark red for accents */
+    --glass-bg: rgba(255, 0, 0, 0.1); /* Glassmorphism with a red tint */
 }
 
 * {
@@ -18,7 +16,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background: var(--gradient-bg);
+    background-color: var(--neutral);
     color: var(--base-100);
     overflow-x: hidden;
 }
@@ -73,7 +71,7 @@ h1 {
 }
 
 .nav-links a:hover {
-    color: var(--accent);
+    color: var(--primary);
 }
 
 section {
@@ -95,20 +93,20 @@ section {
 }
 
 #welcome-section p {
-    color: var(--accent);
+    color: var(--primary);
     font-size: 25px;
     margin: 20px 0;
     font-style: italic;
 }
 
 #projects {
-    background-color: var(--secondary);
-    color: var(--neutral);
+    background-color: var(--neutral);
+    color: var(--base-100);
     padding: 50px 0;
 }
 
 #projects h1 {
-    border-bottom: 5px solid var(--neutral);
+    border-bottom: 5px solid var(--primary);
     width: fit-content;
     margin: auto;
 }
@@ -209,7 +207,7 @@ section {
     margin: auto;
     padding: 0px 15px;
     background-color: var(--neutral);
-    color: var(--accent);
+    color: var(--primary);
     font-size: 25px;
     border-radius: 5px;
     cursor: pointer;
@@ -222,7 +220,7 @@ section {
 }
 
 #contact {
-    background: var(--gradient-bg);
+    background: var(--neutral);
     color: var(--base-100);
     padding: 50px 0;
 }
@@ -251,5 +249,5 @@ section {
 
 #contact .social-media:hover {
     transform: scale(1.2);
-    color: var(--accent);
+    color: var(--primary);
 }
