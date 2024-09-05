@@ -1,10 +1,11 @@
 :root {
-    --background: #0d0d0d; /* Black background */
-    --primary: #3c91e6; /* Electric Blue for highlights and accents */
-    --accent: #ff414d; /* Neon Red for call-to-action buttons and key features */
-    --text: #e0e0e0; /* Light gray text for readability */
-    --glass-bg: rgba(13, 13, 13, 0.5); /* Glass effect background */
-    --highlight: rgba(60, 145, 230, 0.2); /* Light electric blue for subtle highlights */
+    --neutral: #0b0b0d; /* Deep black background for a futuristic feel */
+    --base-100: #d3d3d3; /* Light gray for text, balancing the dark theme */
+    --neutral-focus: rgba(255, 255, 255, 0.08); /* Glass effect with subtle white tint */
+    --primary: #ff414d; /* Bright red for primary highlights, giving a tech look */
+    --accent: #3c91e6; /* Electric blue for accents and interactive elements */
+    --glass-bg: rgba(15, 15, 20, 0.5); /* Semi-transparent glass with a dark tint */
+    --neon-glow: 0 0 10px #ff414d, 0 0 20px #ff414d; /* Neon glow effect for key elements */
 }
 
 * {
@@ -16,14 +17,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--neutral);
+    color: var(--base-100);
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
-    color: var(--text);
+    color: var(--base-100);
 }
 
 h1 {
@@ -31,7 +32,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--primary);
-    text-shadow: 0 0 10px var(--primary);
+    text-shadow: var(--neon-glow);
     animation: fadeInDown 1s ease-in-out;
 }
 
@@ -55,7 +56,7 @@ h1 {
     padding: 20px 0;
     background-color: var(--glass-bg);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--highlight);
+    border-bottom: 1px solid var(--neutral-focus);
     z-index: 1000;
 }
 
@@ -66,14 +67,14 @@ h1 {
 }
 
 .nav-links a {
-    color: var(--text);
+    color: var(--base-100);
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--primary);
+    color: var(--accent);
     transform: scale(1.1);
 }
 
@@ -83,7 +84,7 @@ h1 {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: var(--text);
+    color: var(--base-100);
 }
 
 #welcome-section h1 {
@@ -93,16 +94,16 @@ h1 {
 }
 
 #welcome-section p {
-    color: var(--primary);
+    color: var(--accent);
     font-size: 1.5rem;
     margin: 20px 0;
     font-style: italic;
-    text-shadow: 0 0 10px var(--primary);
+    text-shadow: var(--neon-glow);
 }
 
 #projects {
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--neutral);
+    color: var(--base-100);
     padding: 50px 0;
     position: relative;
 }
@@ -110,7 +111,7 @@ h1 {
 #projects h1 {
     margin-bottom: 20px;
     color: var(--primary);
-    text-shadow: 0 0 10px var(--primary);
+    text-shadow: var(--neon-glow);
 }
 
 .project-slider {
@@ -155,8 +156,8 @@ h1 {
 
 .project-tile p {
     padding: 10px;
-    color: var(--text);
-    background-color: var(--highlight);
+    color: var(--base-100);
+    background-color: var(--neutral-focus);
     border-radius: 0 0 10px 10px;
     text-align: center;
 }
@@ -197,7 +198,7 @@ h1 {
 .code-button,
 .report-button {
     background-color: var(--primary);
-    color: var(--text);
+    color: var(--base-100);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -226,15 +227,15 @@ h1 {
 }
 
 #contact {
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--neutral);
+    color: var(--base-100);
     padding: 50px 0;
 }
 
 #contact h1 {
     margin-bottom: 20px;
     color: var(--primary);
-    text-shadow: 0 0 10px var(--primary);
+    text-shadow: var(--neon-glow);
     animation: fadeInDown 1s ease-in-out;
 }
 
@@ -246,7 +247,7 @@ h1 {
 }
 
 #contact .social-media {
-    color: var(--text);
+    color: var(--base-100);
     font-size: 3rem;
     transition: transform 0.3s, color 0.3s;
 }
